@@ -95,7 +95,7 @@ const HomeScreen = () => {
         <div className="mb-6">
           <DatePicker
             selected={date}
-            onChange={(date: Date) => setDate(date)}
+            onChange={(date: Date | null) => setDate(date as Date)}
             dateFormat="dd/MM/yyyy"
             className="w-full p-3 border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-700"
           />
